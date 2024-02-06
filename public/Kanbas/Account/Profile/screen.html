@@ -1,58 +1,87 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Account Profile Screen</title>
-  </head>
-  <body>
-      
-    <table border="0" width="100%">
-      <tr>
-        <td valign="top">
-          <ul>
-            <li><a href="/Kanbas/Account/Profile/screen.html"> Account</a></li>
-            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a> </li>
-            <li> <a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-            <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-            <li><a href="/Kanbas/History/index.html">History</a></li>
-            <li><a href="/Kanbas/Studio/Home/index.html">Studio</a> </li>
-            <li> <a href="/Kanbas/Commons/index.html">Commons</a></li>
-            <li><a href="/Kanbas/Help/index.html">Help</a></li>
-          </ul>
-        </td>
-        <td valign="top">
-          <ul>
-            <li><a href="/Kanbas/Account/Notification/screen.html">Notification</a></li>
-            <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
-            <li><a href="/Kanbas/Account/Files/screen.html">Files</a></li>
-            <li><a href="/Kanbas/Account/Settings/screen.html">Settings</a></li>
-            <li><a href="/Kanbas/Account/ePortfolios/screen.html">ePortfolios</a></li>
-            <li><a href="/Kanbas/Account/The Hub/screen.html">The Hub</a></li>
-            <li><a href="/Kanbas/Account/Qwickly Course Tools/screen.html">Qwickly Course Tools</a></li>
-            <li><a href="/Kanbas/Account/Global Announcements/screen.html">Global Announcements</a></li>
+    <head>
+        <title>Kanbas Profile</title>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css" rel="stylesheet"/>
         
-         </ul>
-        </td>
-        <td valign="top">
-            <p> Hema Varshini Perla's Profile</p>
-            <hr style="width:50%;text-align:left;margin-left:0"/>
-            
-            <a href="/Kanbas/Account/Profile/Editor/screen.html"> <button type="button" style="position: absolute; right: 80;">Edit Profile</button></a>
-            
-            <h2>Hema Varshini Perla</h2>
-            
-            <h3>Contact</h3>
-            No Registered Services
-            
-            
-            <h3>Biography</h3>
-            Masters student, Computer Science 
-            
-            <h3>Links</h3>
-            <a href="https://sites.google.com/view/hemasportfolio
-            ">Website</a> 
-        </td>
-    </tr>
-  </table>
-
-</body>
+        <link rel="stylesheet" href="/Kanbas/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    </head>
+    <body>
+        <div class="d-flex">
+            <div class="d-none d-md-block">
+               <ul class="wd-kanbas-navigation">
+                  <li><a href="http://northeastern.edu"><img src="/images/NEULogo.png" alt="NEU Logo"></a></li>
+   
+                  <li class="wd-account wd-active"><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i>Account</a></li>
+                  <li>
+                     <a href="/Kanbas/Dashboard/screen.html">
+                     <i class="fa fa-tachometer-alt"></i> Dashboard</a>
+                  </li>
+                  <li><a href="/Kanbas/Courses/Home/screen.html"> <i class="fa fa-book"></i> Courses</a> </li>
+                  <li><a href="/Kanbas/Calendar/index.html"><i class="fa fa-calendar"></i> Calendar</a></li>
+                  <li><a href="/Kanbas/Inbox/index.html"><i class="fas fa-envelope-open-text"></i>Inbox</a></li>
+                  <li><a href="#"><i class="fa-regular fa-clock"></i>History</a></li>
+                  <li><a href="#"><i class="fa fa-desktop"></i>Studio</a></li>
+                  <li><a href="#"><i class="fa fa-external-link-square"></i>Commons</a></li>
+                  <li><a href="#"><i class="fa fa-question-circle"></i>Help</a></li>
+               </ul>
+            </div>
+            <div class="d-none d-md-block">
+                <ul class="wd-navigation">
+                    <li>
+                        <a href="#">Notifications</a>
+                    </li>
+                    <li class="wd-active">
+                        <a href="/Kanbas/Account/Profile/screen.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">Files</a>
+                    </li>
+                    <li>
+                        <a href="#">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#">ePortfolios</a>
+                    </li>
+                    <li>
+                        <a href="#">Shared Content</a>
+                    </li>
+                    <li>
+                        <a href="#">The Hub</a>
+                    </li>
+                    <li>
+                        <a href="#">Qwickly Course Tools</a>
+                    </li>
+                    <li>
+                        <a href="#">Global Announcements</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="mb-3">
+                        <h4> Hema Varshini Perla's Profile</h4>
+                        <hr>
+                        <div class="float-end">
+                            <button class="btn btn-outline-secondary">
+                                <a href = "/Kanbas/Account/Profile/Editor/screen.html">
+                                    <i class="fa fa-pencil"></i>Edit Profile
+                                </a></button>
+                        </div>
+                        <h2>Hema Varshini Perla</h2>
+                        <h4>Contact</h4>
+                        <p>No registered devices, you can find some on the <a href="#">settings</a> page</p>
+                        <h4>Biography</h4>
+                        <p>Teaching Assistant, Student</p>
+                        <h4>Links</h4>
+                        <a href="https://sites.google.com/view/hemasportfolio
+                        ">Portfolio</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
