@@ -13,7 +13,6 @@ function FunctionDestructing() {
         sum = {sum}<br />
         difference = {difference}
       </div>
-   );}
-   export default FunctionDestructing;
-   
-   
+   );
+}
+export default FunctionDestructing;

@@ -20,7 +20,3 @@ function VariableTypes() {
     );
   }
   export default VariableTypes
-  
-  
-  
-  

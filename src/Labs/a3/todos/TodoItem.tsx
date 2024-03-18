@@ -9,4 +9,3 @@ const TodoItem = ( { todo = { done: true, title: 'Buy milk',
  );
 }
 export default TodoItem;
-
