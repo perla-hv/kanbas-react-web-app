@@ -8,15 +8,15 @@ function ClickEvent() {
     return (
       <div>
         <h2>Click Event</h2>
-        <button onClick={hello}>
+        <button onClick={hello} className="btn btn-primary" >
           Click Hello</button>
-        <button onClick={() => lifeIs("Good!")}>
+        <button onClick={() => lifeIs("Good!")}className="btn btn-primary" style={{marginLeft: "10px"}}>
           Click Good</button>
         <button
           onClick={() => {
             hello();
             lifeIs("Great!");
-          }}
+          }}className="btn btn-primary" style={{marginLeft: "10px"}}
         >
           Click Hello 3
         </button>
@@ -24,3 +24,5 @@ function ClickEvent() {
     );
   }
   export default ClickEvent;
+  
+  

@@ -11,14 +11,8 @@
 }
 
 .wd-modules > li {
-  background-color: #f5f5f5;
-  border: 1px solid #c7cdd1 !important;
-  border-left: none !important;
-}
-
-.wd-modules > li > ul {
-  background-color: #f5f5f5;
-  border: 1px solid #c7cdd1 !important;
+  background-color: lightgray;
+  border: 1px solid gray !important;
   border-left: none !important;
 }
 
@@ -35,25 +29,4 @@
 
 .wd-modules > li {
   margin-bottom: 20px;
-  border: 1px solid gray !important;
-}
-
-.wd-modules > li > .float-end {
-  margin-left: auto; /* Push to the extreme right */
-}
-
-.course-status {
-  padding-left: 15px;
-}
-
-.list-group i {
-  padding: 3px;
-}
-
-.tab {
-  padding: 30px;
-}
-
-.btn {
-  margin-left: 5px;
 }

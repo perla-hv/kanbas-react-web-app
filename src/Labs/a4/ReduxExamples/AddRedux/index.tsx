@@ -27,11 +27,11 @@ function AddRedux() {
       />
       <button
         onClick={() => dispatch(add({ a, b }))}
-        className="btn btn-primary"
-      >
+        className="btn btn-primary" style={{ marginTop: '10px', marginBottom: '10px'}}>
         Add Redux
       </button>
     </div>
   );
 }
 export default AddRedux;
+

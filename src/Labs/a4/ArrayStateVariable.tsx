@@ -10,17 +10,25 @@ function ArrayStateVariable() {
   return (
     <div>
       <h2>Array State Variable</h2>
-      <button onClick={addElement} className="btn btn-success">Add Element</button>
-      <ul>
-        {array.map((item, index) => (
-          <li key={index}>
-            {item}
-            <button onClick={() => deleteElement(index)} className="btn btn-primary">
-              Delete</button>
-          </li>
-        ))}
-      </ul>
+      <button onClick={addElement} className="btn btn-success" style={{ marginBottom : '10px'}}>
+      Add Element
+      </button>
+      <table>
+        <tbody>
+          {array.map((item, index) => (
+            <tr key={index}>
+              <td style={{ paddingRight: '40px' }}>{item}</td> 
+              <td>
+                <button onClick={() => deleteElement(index)} className="btn btn-danger" >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
 export default ArrayStateVariable;
+

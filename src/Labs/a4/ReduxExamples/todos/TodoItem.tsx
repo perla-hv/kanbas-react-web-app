@@ -11,9 +11,10 @@ interface TodoItemProps {
 
   return (
     <li key={todo.id} className="list-group-item">
-      <button onClick={() => dispatch(deleteTodo(todo.id))}> Delete </button>
-      <button onClick={() => dispatch(setTodo(todo))}> Edit </button>
-      {todo.title}
+        {todo.title}
+      <button onClick={() => dispatch(deleteTodo(todo.id))}className="btn btn-danger" style={{ marginLeft:'110px',marginRight : '10px'}}> Delete </button>
+      <button onClick={() => dispatch(setTodo(todo))}className="btn btn-primary" style={{ marginLeft:'5px'}}> Edit </button>
+      
     </li>
   );
 }

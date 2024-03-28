@@ -9,12 +9,14 @@ function TodoForm(
   const dispatch = useDispatch();
   return (
     <li className="list-group-item">
-      <button onClick={() => dispatch(addTodo(todo))}> Add </button>
-      <button onClick={() => dispatch(updateTodo(todo))}> Update </button>
       <input
         value={todo.title}
         onChange={(e) => dispatch(setTodo({ ...todo, title: e.target.value }))}
       />
+      <button onClick={() => dispatch(updateTodo(todo))}className="btn btn-warning" style={{marginLeft:'10px', marginRight : '10px'}}> Update </button>
+      <button onClick={() => dispatch(addTodo(todo))}className="btn btn-success" > Add </button>
+      
+      
     </li>
   );
 }

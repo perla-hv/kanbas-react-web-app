@@ -9,8 +9,12 @@ export type TodoType = {
 };
 
 export interface LabState {
-  helloReducer: { message: string; };
-  counterReducer: { count: number; };
+  helloReducer: {
+    message: string;
+  };
+  counterReducer: {
+    count: number;
+  };
   addReducer: {
     sum: number;
   };
@@ -26,6 +30,9 @@ const store = configureStore({
     counterReducer,
     addReducer,
     todosReducer,
+
+
   },
 });
 export default store;
+
